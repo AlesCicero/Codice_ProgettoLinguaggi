@@ -1,0 +1,144 @@
+STRUTTURA DEL DOCUMENTO
+
+	1) # START_name{  }# END_ name		apertura e chiusura di una certa azione da svolgere
+	2) < keyword: value , keyword: value  >	l'utente inserisce il valore 
+				
+				a) < > campo da analizzare
+				b) " : " separatore keyword - value:
+						se value  è  tra apici " " allora è una stringa
+						se valure è tra parentesi quadre[ ] allora è un tipo numerico
+				c) la " , " separa i vari campi all'interno dei <> cosi da poter inserire più informazioni 
+	3) %* *% commenti 
+
+
+# START_DOCUMENT
+	{
+	
+	%* l'utente inserisce il percorso del file in input [ campo obligatorio ] *%
+	# START_INCLUDEPATH
+		{
+		
+			< pathfile : "input" >	
+		
+		}	
+	# END_INCLUDEPATH
+	
+	
+	%* l'utente inserisce il percorso del file in output [ campo opzionale ] *%
+	# START_OUTPUTPATH
+		{	
+		
+		< pathfile : "output" >
+		
+		}	
+	# END_OUTPUTPATH
+	
+	%* l'utente inserisce il tipo di conversione da effettuare [CSV, TXT, JSON] *%
+	# START_TYPECONVERSION
+		{
+		
+		< typeConversion : " CSV " >
+		
+		}
+	# END_TYPECONVERSION
+		
+	
+	%* l'utente inserisce l'indice e poi il nomi dei vari fogli che vuole modificare [ campo opzionale ] *%
+	# START_NAMESHEET
+			{
+			 
+			   < sheetIndex : [ 1 ] , nameSheet : "Foglio 1" >
+			   < sheetIndex : [ 2 ] , nameSheet : "Foglio 2" >
+			   .
+			   .
+			   .
+			   .
+			   < sheetIndex : " n " , nameSheet : "Foglio N"> 
+			}
+	# END_NAMESHEET
+	
+	%* l'utente inserisce l'indice del folgio e poi l'indice della riga o colonna che vuole eliminare [ campo opzionale ] *%
+	# START_DELETE 
+		{
+			
+			# START_DELETEROW
+					{
+			
+					< sheetIndex : [ 1 ] , row : [ 1 ] >
+					.
+					. 
+					.
+					< sheetIndex : [ N ] , row : [ N ] >
+					
+					}
+				
+			# END_DELETEROW
+			
+			# START_DELETECOL
+					{
+			
+					< sheetIndex : [ 1 ] , col : [ 1 ] >
+					.
+					. 
+					.
+					< sheetIndex : [ N ] , col : [ N ] >
+					
+					}
+			# END_DELETECOL
+			
+				
+		    
+	# END_DELETE
+	
+	%* l'utente inserisce l'indice del fogLio e poi l'indice della riga e colonna della cella che vuole modificare [ campo opzionale ] *%
+	# START_MODIFYINGCELL 
+		{
+		
+		# START_INDEXSHEET
+		 	{
+			< indexSheet : [ 1 ] >
+			
+				# START_INDEXCELL
+					{		
+					
+					< row : [ 1 ] , col : [ 1 ], value : "value" >
+					< row : [   ] , col : [   ], value : "     " >
+					. 
+					.
+					< row : [ N ] , col : [ N ], value : "     " >
+					
+					}
+				# END_INDEXCELL		
+			}		
+		# END_INDEXSHEET 
+		
+		.
+		.
+		.
+		
+		# START_INDEXSHEET
+		 	{
+		 	
+			< indexSheet : [ N ] >
+			
+				# START_INDEXCELL
+					{
+					
+					< row : [ 1 ] , col : [ 1 ], value : "value" >
+					< row : [   ] , col : [   ], value : "     " >
+					. 
+					.
+					< row : [ N ] , col : [ N ], value : "     " >
+					
+					}
+				# END_INDEXCELL		
+			
+			}			
+		# END_INDEXSHEET 
+		
+			   
+		}	    
+	# END_MODIFYINGCELL
+	
+	}
+# END_DOCUMENT

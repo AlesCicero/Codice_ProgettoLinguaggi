@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="poi-5.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-examples-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-excelant-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-ooxml-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-ooxml-full-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-ooxml-lite-5.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-scratchpad-5.2.2.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/Libraries/ApachiPoi_Library/poi-bin-5.2.2/poi-javadoc-5.2.2.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

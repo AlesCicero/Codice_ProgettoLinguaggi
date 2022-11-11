@@ -1,0 +1,80 @@
+#STARTDOCUMENT
+    %*COMMENTO*%
+
+
+#STARTINPATH
+
+%*COMMENTO*%
+  <"C:\Users\aless\Desktop\PROGETTO_LINGUAGGI_FORMALI_COMPILATORI\Progetto_new\testConversion.xlsx"> 
+%* <ERR"C:\Users\aless\Desktop\PROGETTO_LINGUAGGI_FORMALI_COMPILATORI\Progetto_new\testConversion.xlsx"> *%
+#ENDINPATH
+
+
+#STARTOUTPATH
+
+	<"C:\Users\aless\Desktop\PROGETTO_LINGUAGGI_FORMALI_COMPILATORI\output_new\">  
+	
+	
+	
+
+#ENDOUTPATH
+
+#STARTTYPECONVERSION
+	%* il commento lo prendo *% 
+	<"CSV">	
+	<"TXT">
+	<"JSON">
+
+#ENDTYPECONVERSION
+
+%*COMMENTO*%
+
+#STARTNAMESHEET
+
+	%*COMMENTO*%
+        
+	<sheetIndex:1,nameSheet:"Foglio_1">
+	%*<sheetIndex:"1",nameSheet:"Foglio_1">*%
+
+
+#ENDNAMESHEET
+
+%*
+COMMENTO*%
+
+#STARTDELETE
+
+
+#STARTROW
+%* COMMENTO: elimino la riga con "book" e la colonna con le date*%
+
+	<sheetIndex:1,indexDelete:2>
+	*% <sheetIndex:1,indexDelete:13>
+	*% <sheetIndex:"1",indexDelete:14>
+
+#ENDROW
+
+#STARTCOL
+	<sheetIndex:1,indexDelete:1>
+	<sheetIndex:1,indexDelete:2>
+	*%<sheetIndex:1,indexDelete:5>
+	*%<sheetIndex:"1",indexDelete:5>
+
+#ENDCOL
+
+#ENDDELETE
+
+%*
+COMMENTO*%
+
+#STARTMODIFYINGCELL
+
+
+	%*<sheetIndex:"1",row:2,col:4,value:10>*% 
+	<sheetIndex:1,row:11,col:4,value:000> 
+	<sheetIndex:1,row:12,col:4,value:000> 
+
+
+#ENDMODIFYINGCELL 
+
+#ENDDOCUMENT

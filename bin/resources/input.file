@@ -1,0 +1,76 @@
+#STARTDOCUMENT 
+    %*COMMENTO*%
+
+#STARTINPATH
+
+%*COMMENTO*%
+<"C:\\Users\\mirra\\Desktop\\LFC\\testConversion.xlsx";>
+
+#ENDINPATH
+
+#STARTOUTPATH
+	<"C:\\Users\\mirra\\Desktop\\LFC\\">
+
+#ENDOUTPATH
+
+#STARTTYPECONVERSION
+	%* il commento lo prendo *% 
+	<"CSV">
+	<"JSON">
+	<"TXT">
+#ENDTYPECONVERSION
+
+%*COMMENTO*%
+
+#STARTNAMESHEET
+	%*COMMENTO*%
+        <sheetIndex:1,nameSheet:"Foglio_1">
+
+%*COMMENTO*%
+    	<sheetIndex:2,nameSheet:"Foglio_2">
+#ENDNAMESHEET
+
+%*
+COMMENTO*%
+
+#STARTDELETE
+
+
+#STARTROW
+%* COMMENTO: elimino la riga con "book" e la colonna con le date*%
+
+	<sheetIndex:1,indexDelete:14>
+
+#ENDROW
+
+
+	#STARTCOL
+	<sheetIndex:1,indexDelete:5>
+	#ENDCOL
+#ENDDELETE
+
+%*
+COMMENTO*%
+
+#STARTMODIFYINGCELL
+
+%*
+COMMENTO*%
+	<sheetIndex:1,row:2,col:2,value:"Test modifical stringa">
+
+%*
+COMMENTO*%
+
+
+	<sheetIndex:1,row:2,col:4,value:100>
+%*
+COMMENTO*%
+
+#ENDMODIFYINGCELL
+
+%*
+COMMENTO*%
+
+
+
+#ENDDOCUMENT
